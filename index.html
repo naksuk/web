@@ -14,55 +14,23 @@
         } 
 
         header {
-        font-size: 28px;
-        text-align: center;
+            font-size: 28px;
+            text-align: center;
         }   
 
         #container {
+            text-align: center;
             padding-left: 20%;
             padding-right: 20%;
+        }
+
+        #access{
+            margin-bottom: 10px;
         }
 
         #mail{
             font-size:26px;
             margin-top: 0px;
-        }
-
-        .app-content, .app-content-next{
-            float: left;
-            margin: 0px 20px 0px 20px;
-            text-align: center;
-        }
-
-        .clear{
-            clear: both;
-        }
-        
-        .app-image{
-            border-radius: 22%;
-        }
-
-        .app-image-next{
-            border-radius: 22%;
-        }
-
-        .app-image:hover {
-            transform: scale(1.1);
-            transition-duration: 0.5s;
-        }
-
-        .app-image-next:hover {
-            transform: scale(1.1);
-            transition-duration: 0.5s;
-        }
-
-        .app-title, .app-title-next{
-            font-size: 20px;
-            margin-top: 0px;
-        }
-
-        #access{
-            margin-bottom: 10px;
         }
     }
     
@@ -71,16 +39,21 @@
             background-color: rgb(0, 162, 255);
             text-align: center;
             color: white;
-            }
+        }
 
         header {
-        font-size: 28px;
-        text-align: center;
+            font-size: 28px;
+            text-align: center;
         }   
 
         #container {
+            text-align: center;
             padding-left: 20%;
             padding-right: 20%;
+        }
+
+        #access{
+            margin-bottom: 10px;
         }
 
         #mail{
@@ -88,96 +61,22 @@
             margin-top: 0px;
         }
 
-        .app-content, .app-content-next{
-            float: left;
-            margin: 0px 20px 0px 20px;
-        }
-
-        .clear{
-            clear: both;
-        }
-        
-        .app-image{
-            border-radius: 22%;
-        }
-
-        .app-image-next{
-            border-radius: 22%;
-        }
-
-        .app-image:hover {
-            transform: scale(1.1);
-            transition-duration: 0.5s;
-        }
-
-        .app-image-next:hover {
-            transform: scale(1.1);
-            transition-duration: 0.5s;
-        }
-
-        .app-title, .app-title-next{
-            font-size: 20px;
-            margin-top: 0px;
-        }
-
-        #access{
-            margin-bottom: 10px;
-        }
-
      }
-
-    
 </style>
 <script>
     $(function(){
-        view()
-    
-        function view(){
         $('#title').hide().fadeIn(2000)
-        $('#app').hide().delay(1000).fadeIn(2000)
-        $('.app-image, .app-title').hide().delay(2000).fadeIn(2000)
-        $('#next').hide().delay(2500).fadeIn(2000)
-        $('.app-image-next, .app-title-next').hide().delay(3500).fadeIn(2000)
-        $('#access, #mail').hide().delay(4500).fadeIn(2000)
-        }
+        $('.sentense').hide().delay(2000).fadeIn(2000)
+        $('#access, #mail').hide().delay(5000).fadeIn(2000)
     });
 </script>
 <body>
-    <header><h1 id="title">AppLab</h1></header>
+    <header><h1 id="title">DeveloperWeb</h1></header>
     <div id="container">
-        <div id="app-wrapper">
-        <h1 id="app">My Apps</h1>
-            <div>
-                <div class="app-content"> 
-                    <a href="https://apps.apple.com/us/app/%E9%AD%94%E5%89%A4%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB/id1560811875?itsct=apps_box_link&itscg=30200.html">
-                        <img class="app-image" src="./魔剤コンサル.png">
-                    </a>
-                    <p class="app-title">魔剤コンサル</p>
-                </div>
-                <div class="app-content">
-                    <a href="https://apps.apple.com/us/app/%E9%AD%94%E5%89%A4%E9%9B%BB%E5%8D%93/id1561529341?itsct=apps_box_link&itscg=30200">
-                        <img class="app-image" src="./魔剤電卓.png">
-                    </a>
-                    <p class="app-title">魔剤電卓</p>
-                </div>
-                <div class="app-content"> 
-                    <a href="https://apps.apple.com/jp/app/autotimer/id1564012070?itsct=apps_box_link&itscg=30200">
-                        <img class="app-image" src="./AutoTimer.png">
-                    </a>
-                    <p class="app-title">AutoTimer</p>
-                </div>
-                
-            </div>
-        </div>
-        <div class="clear"></div>
-        <!-- <div id="next-wrapper">
-            <h1 id="next">Next Release</h1>
-            <div class="app-content-next"> 
-                <img class="app-image-next" src="./AutoTimer.png">
-                <p class="app-title-next">AutoTimer</p>
-            </div>
-        </div>
-        <div class="clear"></div> -->
+        <p class="sentense">この度は弊アプリのページをご覧頂き、誠にありがとうございます。</p>
+        <p class="sentense">アプリに対するご意見等は以下のメールアドレスより、お待ちしております。</p>
+        <p class="sentense">貴重なご意見として、アプリ改善に役立させて頂きます。</p>
+        <p class="sentense">気兼ねなく、ご連絡頂けますと幸いです。</p>
         <h1 id="access">お問い合わせ</h1>
         <p id="mail">n4ksuk@gmail.com</p>
 </body>
